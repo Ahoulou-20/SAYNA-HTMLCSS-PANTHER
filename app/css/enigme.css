@@ -1,33 +1,24 @@
 @charset "UTF-8";
 @font-face {
   font-family: panthera;
-  src: url("../sass/fonts/panthera.otf") format("opentype");
+  src: url("../assets/fonts/panthera.otf") format("opentype");
 }
-
 @font-face {
   font-family: beyno;
   src: url("../assets/fonts/BEYNO.otf") format("opentype");
 }
-
 @font-face {
   font-family: wakanda;
   src: url("../assets/fonts/WakandaForever-Regular.ttf") format("truetype");
 }
-
 @font-face {
   font-family: cantarell;
   src: url("../assets/fonts/Cantarell-Regular.ttf") format("truetype");
 }
-
-body {
-  background-image: url("../assets/fonts/Illustrations+Logo/All-pages/arrière_plan.png");
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -118,7 +109,6 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -158,6 +148,65 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/Illustrations+Logo/All-pages/arrière_plan.png");
+}
+
+/*Styles partie en-tête*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+header nav.h-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav.h-nav ul li {
+  padding: 0.4rem 0.4rem;
+  margin: 0 0.4rem;
+}
+header nav.h-nav ul li a {
+  text-decoration: none;
+  font-family: beyno;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* Style menu  */
+/* Partie sec 1 */
+section.sec-1 {
+  display: flex;
+  width: 100%;
+  padding: 0 1rem;
+}
+section.sec-1 article.sec1-l {
+  width: 50%;
+}
+section.sec-1 article.sec1-l img {
+  width: 100%;
+  height: 90vh;
+}
+section.sec-1 article.sec1-r {
+  padding: 0;
+  padding-top: 12rem;
+  width: 50%;
+}
+section.sec-1 article.sec1-r h2 {
+  font-family: beyno;
+  font-size: 36px;
+  color: #f2cef2;
+  margin-bottom: 3rem;
+}
+section.sec-1 article.sec1-r div.quot .citation {
+  width: 100px;
 }
 
 /*# sourceMappingURL=enigme.css.map */

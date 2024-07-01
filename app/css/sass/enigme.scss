@@ -1,6 +1,85 @@
-@import "./reset/reset.scss";
-@import "./fonts/colors.scss";
-body {
-  background-image: url("../ASSETS/Illustrations+Logo/All-pages/arrière_plan.png");
+@font-face {
+  font-family: panthera;
+  src: url("../assets/fonts/panthera.otf") format("opentype");
 }
 
+@font-face {
+  font-family: beyno;
+  src: url("../assets/fonts/BEYNO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: wakanda;
+  src: url("../assets/fonts/WakandaForever-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: cantarell;
+  src: url("../assets/fonts/Cantarell-Regular.ttf") format("truetype");
+}
+
+@import "./reset.scss";
+@import "./colors.scss";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/Illustrations+Logo/All-pages/arrière_plan.png");
+}
+
+/*Styles partie en-tête*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  nav.h-nav ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      padding: 0.4rem 0.4rem;
+      margin: 0 0.4rem;
+    }
+    li a {
+      text-decoration: none;
+      font-family: beyno;
+      color: $white;
+      font-size: 16px;
+    }
+  }
+}
+
+/* Style menu  */
+
+/* Partie sec 1 */
+
+section.sec-1 {
+  display: flex;
+  width: 100%;
+  padding: 0 1rem;
+  article.sec1-l {
+    width: 50%;
+    img {
+      width: 100%;
+      height: 90vh;
+    }
+  }
+  article.sec1-r {
+    padding: 0;
+    padding-top: 12rem;
+    width: 50%;
+    h2 {
+      font-family: beyno;
+      font-size: 36px;
+      color: $pink;
+      margin-bottom: 3rem;
+    }
+    div.quot {
+      .citation {
+        width: 100px;
+      }
+    }
+  }
+}
