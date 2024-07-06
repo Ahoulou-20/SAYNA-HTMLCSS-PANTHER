@@ -152,6 +152,33 @@ table {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
+
+*::selection {
+  background-color: #f2cef2;
+  color: #021740;
+}
+
+*::-webkit-scrollbar {
+  height: 0.2rem;
+  width: 0.3rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #f2cef2;
+  border-radius: 1rem;
 }
 
 body {
@@ -179,34 +206,247 @@ header nav.h-nav ul li a {
   color: #ffffff;
   font-size: 16px;
 }
+header nav.h-nav ul li a:hover {
+  color: #f2cef2;
+  transition: color 0.3s ease-out;
+}
+header nav.h-nav ul li a#enigme {
+  color: #f2cef2;
+}
 
 /* Style menu  */
 /* Partie sec 1 */
 section.sec-1 {
+  box-sizing: border-box;
   display: flex;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 0 1rem 0;
 }
-section.sec-1 article.sec1-l {
-  width: 50%;
-}
-section.sec-1 article.sec1-l img {
-  width: 100%;
-  height: 90vh;
+section.sec-1 img {
+  width: 40%;
+  height: 120vh;
+  transform: translate(10%, -20%);
 }
 section.sec-1 article.sec1-r {
   padding: 0;
-  padding-top: 12rem;
-  width: 50%;
+  padding-top: 5rem;
+  width: 60%;
 }
 section.sec-1 article.sec1-r h2 {
+  width: 42%;
   font-family: beyno;
   font-size: 36px;
   color: #f2cef2;
-  margin-bottom: 3rem;
+  text-align: justify;
+  transform: translateX(-5%);
+  margin-bottom: 1rem;
 }
-section.sec-1 article.sec1-r div.quot .citation {
-  width: 100px;
+section.sec-1 article.sec1-r div.quot {
+  transform: translateX(-10%);
+  height: 400px;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0;
+  background-image: url("../assets/Illustrations+Logo/Enigme/Pantherenigme2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.sec-1 article.sec1-r div.quot P.citation {
+  width: 75%;
+  text-align: justify;
+  color: #ffffff;
+  font-family: cantarell;
+  font-size: 14px;
+}
+section.sec-1 article.sec1-r img {
+  transform: translate(-10%, -50%);
+  height: 1px;
+  width: 80%;
+}
+
+/* Partie sec 2 */
+section.sec2 {
+  padding: 1.5rem 1rem 2rem 8rem;
+  width: 100%;
+}
+section.sec2 h2.text-enigme {
+  font-size: 43px;
+  font-family: wakanda;
+  color: #f2cef2;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+section.sec2 article {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.sec2 article div.sec2-b {
+  font-family: cantarell;
+  font-size: 14px;
+  width: 50%;
+  color: #ffffff;
+}
+section.sec2 article div.sec2-b p {
+  width: 100%;
+  line-height: 130%;
+  margin-bottom: 5rem;
+}
+section.sec2 article div.sec2-b p span.text-enigme {
+  font-family: wakanda;
+}
+section.sec2 article div.sec2-b form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+section.sec2 article div.sec2-b form label {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+section.sec2 article div.sec2-b form input[type=text] {
+  margin: 0.5rem 0 2.5rem 0;
+  width: 100%;
+  height: 2rem;
+  border: 1px solid #f2cef2;
+  padding: 0.3rem 1rem;
+  background-color: inherit;
+  color: #f2cef2;
+  border-radius: 2rem;
+}
+section.sec2 article div.sec2-b form input[type=text]::placeholder {
+  color: #f2cef2;
+}
+section.sec2 article div.sec2-b form button[type=submit] {
+  color: #021740;
+  background-color: #f2cef2;
+  margin: auto;
+  width: 6.5rem;
+  height: 2.3rem;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+section.sec2 article div.sec2-b form button[type=submit]:hover {
+  color: #f2cef2;
+  background-color: #021740;
+  border: 1px solid #f2cef2;
+  transition: 0.5s ease-out;
+}
+section.sec2 article div.sec2-r {
+  font-size: 12px;
+  font-family: cantarell;
+  color: #ffffff;
+  width: 50%;
+}
+section.sec2 article div.sec2-r div.quot {
+  background-image: url("../assets/Illustrations+Logo/Enigme/Pantherenigme2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+section.sec2 article div.sec2-r div.quot p {
+  transform: translateY(-24%);
+  width: 90%;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-image: url("../assets/Illustrations+Logo/All-pages/back_footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer div.f-container {
+  color: #ffffff;
+  font-family: cantarell;
+  font-size: 14px;
+  width: 70%;
+  margin: auto;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div.f-container h3 {
+  font-size: 22px;
+  letter-spacing: 28%;
+  margin-bottom: 2rem;
+}
+footer div.f-container article.f-left {
+  width: 30%;
+}
+footer div.f-container article.f-left div.f-logo {
+  width: 80%;
+  background-image: url("../assets/Illustrations+Logo/All-pages/footer1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42vh;
+}
+footer div.f-container article.f-right {
+  width: 65%;
+}
+footer div.f-container article.f-right div.f-right-top {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+footer div.f-container article.f-right div.f-right-top div.pages {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer div.f-container article.f-right div.f-right-top div.pages div.link {
+  margin: 10px 0;
+}
+footer div.f-container article.f-right div.f-right-top div.pages div.link a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+footer div.f-container article.f-right div.f-right-top div.pages div.link a span {
+  margin-right: 2px;
+}
+footer div.f-container article.f-right div.f-right-top div.retrouvez-nous {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer div.f-container article.f-right div.f-right-top div.retrouvez-nous div.img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+footer div.f-container article.f-right div.f-r-bottom {
+  display: flex;
+  align-items: center;
+}
+footer div.f-container article.f-right div.f-r-bottom p span {
+  background-color: #f2cef2;
+  color: #f2cef2;
+  font-size: 8px;
+  border-radius: 100%;
+  padding: 1px;
+  margin: 0 4px;
 }
 
 /*# sourceMappingURL=enigme.css.map */

@@ -22,6 +22,33 @@
 @import "./colors.scss";
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
+
+*::selection {
+  background-color: $pink;
+  color: $deep-blue;
+}
+
+*::-webkit-scrollbar {
+  height: 0.2rem;
+  width: 0.3rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $pink;
+  border-radius: 1rem;
 }
 
 body {
@@ -47,6 +74,13 @@ header {
       font-family: beyno;
       color: $white;
       font-size: 16px;
+      &:hover {
+        color: $pink;
+        transition: color 0.3s ease-out;
+      }
+    }
+    li a#enigme {
+      color: $pink;
     }
   }
 }
@@ -56,29 +90,236 @@ header {
 /* Partie sec 1 */
 
 section.sec-1 {
+  box-sizing: border-box;
   display: flex;
   width: 100%;
-  padding: 0 1rem;
-  article.sec1-l {
-    width: 50%;
-    img {
-      width: 100%;
-      height: 90vh;
-    }
+  padding: 0 0 1rem 0;
+  img {
+    width: 40%;
+    height: 120vh;
+    transform: translate(10%, -20%);
   }
   article.sec1-r {
     padding: 0;
-    padding-top: 12rem;
-    width: 50%;
+    padding-top: 5rem;
+    width: 60%;
     h2 {
+      width: 42%;
       font-family: beyno;
       font-size: 36px;
       color: $pink;
-      margin-bottom: 3rem;
+      text-align: justify;
+      transform: translateX(-5%);
+      margin-bottom: 1rem;
     }
     div.quot {
-      .citation {
-        width: 100px;
+      transform: translateX(-10%);
+      height: 400px;
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 0;
+      background-image: url("../assets/Illustrations+Logo/Enigme/Pantherenigme2.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      P.citation {
+        width: 75%;
+        text-align: justify;
+        color: $white;
+        font-family: cantarell;
+        font-size: 14px;
+      }
+    }
+    img {
+      transform: translate(-10%, -50%);
+      height: 1px;
+      width: 80%;
+    }
+  }
+}
+
+/* Partie sec 2 */
+
+section.sec2 {
+  padding: 1.5rem 1rem 2rem 8rem;
+  width: 100%;
+  h2.text-enigme {
+    font-size: 43px;
+    font-family: wakanda;
+    color: $pink;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  article {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div.sec2-b {
+      font-family: cantarell;
+      font-size: 14px;
+      width: 50%;
+      color: $white;
+      p {
+        width: 100%;
+        line-height: 130%;
+        margin-bottom: 5rem;
+        span.text-enigme {
+          font-family: wakanda;
+        }
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        label {
+          width: 100%;
+          margin: 0.5rem 0;
+        }
+        input[type="text"] {
+          margin: 0.5rem 0 2.5rem 0;
+          width: 100%;
+          height: 2rem;
+          border: 1px solid $pink;
+          padding: 0.3rem 1rem;
+          background-color: inherit;
+          color: $pink;
+          border-radius: 2rem;
+        }
+        input[type="text"]::placeholder {
+          color: $pink;
+        }
+        button[type="submit"] {
+          color: $deep-blue;
+          background-color: $pink;
+          margin: auto;
+          width: 6.5rem;
+          height: 2.3rem;
+          border-radius: 2rem;
+          padding: 0.5rem 1rem;
+          border: none;
+          &:hover {
+            color: $pink;
+            background-color: $deep-blue;
+            border: 1px solid $pink;
+            transition: 0.5s ease-out;
+          }
+        }
+      }
+    }
+    div.sec2-r {
+      font-size: 12px;
+      font-family: cantarell;
+      color: $white;
+      width: 50%;
+      div.quot {
+        background-image: url("../assets/Illustrations+Logo/Enigme/Pantherenigme2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 280px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        p {
+          transform: translateY(-24%);
+          width: 90%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background-image: url("../assets/Illustrations+Logo/All-pages/back_footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  div.f-container {
+    color: $white;
+    font-family: cantarell;
+    font-size: 14px;
+    width: 70%;
+    margin: auto;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      font-size: 22px;
+      letter-spacing: 28%;
+      margin-bottom: 2rem;
+    }
+    article.f-left {
+      width: 30%;
+      div.f-logo {
+        width: 80%;
+        background-image: url("../assets/Illustrations+Logo/All-pages/footer1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 42vh;
+      }
+    }
+    article.f-right {
+      width: 65%;
+      div.f-right-top {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        div.pages {
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          div.link {
+            margin: 10px 0;
+            a {
+              color: $white;
+              text-decoration: none;
+              text-transform: capitalize;
+              span {
+                margin-right: 2px;
+              }
+            }
+          }
+        }
+        div.retrouvez-nous {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          div.img {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60%;
+          }
+        }
+      }
+      div.f-r-bottom {
+        display: flex;
+        align-items: center;
+        p {
+          span {
+            background-color: $pink;
+            color: $pink;
+            font-size: 8px;
+            border-radius: 100%;
+            padding: 1px;
+            margin: 0 4px;
+          }
+        }
       }
     }
   }
