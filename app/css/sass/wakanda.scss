@@ -30,6 +30,11 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 10rem;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
 }
 
 *::selection {
@@ -84,160 +89,143 @@ header {
         text-decoration: underline;
       }
     }
-    li a#enigme {
+    li a#wakanda {
       color: $pink;
       text-decoration: underline;
     }
   }
 }
 
-/* Style menu  */
-
-/* Partie sec 1 */
-
-section.sec-1 {
-  box-sizing: border-box;
-  display: flex;
+main {
   width: 100%;
-  padding: 0 0 1rem 0;
-  img {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+section.w-1 {
+  padding: 0;
+  width: 100%;
+  height: 110vh;
+  background-image: url("../assets/Illustrations+Logo/Wakanda/Pantherwakanda1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  div.w1-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     width: 40%;
-    height: 120vh;
-    transform: translate(10%, -20%);
-  }
-  article.sec1-r {
-    padding: 0;
-    padding-top: 5rem;
-    width: 60%;
+    transform: translate(35%, 120%);
     h2 {
-      width: 42%;
+      font-size: 43px;
       font-family: beyno;
-      font-size: 36px;
       color: $pink;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    h2.text-enigme {
+      font-family: wakanda;
+      font-size: 39px;
+      font-weight: normal;
+      width: 390px;
       text-align: justify;
-      transform: translateX(-5%);
-      margin-bottom: 1rem;
+      margin-bottom: 20px;
     }
-    div.quot {
-      transform: translateX(-10%);
-      height: 400px;
-      width: 100%;
-      padding: 1rem;
-      margin-bottom: 0;
-      background-image: url("../assets/Illustrations+Logo/Enigme/Pantherenigme2.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      P.citation {
-        width: 75%;
-        text-align: justify;
-        color: $white;
-        font-family: cantarell;
-        font-size: 14px;
-      }
-    }
-    img {
-      transform: translate(-10%, -50%);
-      height: 1px;
-      width: 80%;
+    p {
+      color: $white;
+      font-size: 12px;
+      font-family: cantarell;
+      width: 390px;
+      text-align: justify;
     }
   }
 }
 
-/* Partie sec 2 */
-
-section.sec2 {
-  padding: 1.5rem 1rem 2rem 8rem;
+section.w-2 {
+  padding: 30px 0;
   width: 100%;
-  h2.text-enigme {
-    font-size: 43px;
-    font-family: wakanda;
-    color: $pink;
-    width: 80%;
-    margin-bottom: 2rem;
-  }
-  article {
-    width: 100%;
+  //   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  background-image: url("../assets/Illustrations+Logo/Wakanda/Pantherwakanda2.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: brightness(0.7);
+  article.w2-l {
+    width: 46%;
+    height: fit-content;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    div.sec2-b {
-      font-family: cantarell;
-      font-size: 14px;
-      width: 50%;
-      color: $white;
-      p {
-        width: 100%;
-        line-height: 130%;
-        margin-bottom: 5rem;
-        span.text-enigme {
-          font-family: wakanda;
-        }
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        label {
-          width: 100%;
-          margin: 0.5rem 0;
-        }
-        input[type="text"] {
-          margin: 0.5rem 0 2.5rem 0;
-          width: 100%;
-          height: 2rem;
-          border: 1px solid $pink;
-          padding: 0.3rem 1rem;
-          background-color: inherit;
+    color: $white;
+    font-family: cantarell;
+    font-size: 12px;
+    margin-right: 20px;
+    div.w2-d {
+      margin: 20px 0;
+    }
+    h2 {
+      font-family: beyno;
+      font-size: 22px;
+      font-weight: normal;
+      color: $pink;
+      margin: 20px 0;
+    }
+    p {
+      width: 100%;
+      margin: 30px 0;
+      text-align: justify;
+      a#link {
+        color: $white;
+        text-decoration: none;
+        margin: auto;
+        text-align: center;
+        &:hover {
+          text-decoration: underline;
           color: $pink;
-          border-radius: 2rem;
-        }
-        input[type="text"]::placeholder {
-          color: $pink;
-        }
-        button[type="submit"] {
-          color: $deep-blue;
-          background-color: $pink;
-          margin: auto;
-          width: 6.5rem;
-          height: 2.3rem;
-          border-radius: 2rem;
-          padding: 0.5rem 1rem;
-          border: none;
-          &:hover {
-            color: $pink;
-            background-color: $deep-blue;
-            border: 1px solid $pink;
-            transition: 0.5s ease-out;
-          }
+          opacity: 0.7;
+          transition: all 0.5s ease-out;
         }
       }
     }
-    div.sec2-r {
-      font-size: 12px;
-      font-family: cantarell;
-      color: $white;
-      width: 50%;
-      div.quot {
-        background-image: url("../assets/Illustrations+Logo/Enigme/Pantherenigme2.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 280px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        p {
-          transform: translateY(-24%);
-          width: 90%;
-          text-align: center;
-        }
-      }
+    div.d-link {
+      padding-left: 70px;
+      padding-top: 30px;
+      background-color: $purple;
+      height: 250px;
+    }
+  }
+  article.w2-r {
+    height: fit-content;
+    margin-left: 30px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $white;
+    font-family: cantarell;
+    font-size: 12px;
+    div.w2-d {
+      margin: 20px 0;
+    }
+    h2 {
+      font-family: beyno;
+      font-size: 22px;
+      font-weight: normal;
+      color: $pink;
+      margin: 20px 0;
+    }
+    p {
+      width: 100%;
+      margin: 30px 0;
+      text-align: justify;
+    }
+    img {
+      width: 90%;
     }
   }
 }
@@ -245,7 +233,7 @@ section.sec2 {
 footer {
   width: 100%;
   background-image: url("../assets/Illustrations+Logo/All-pages/back_footer.png");
-  background-position: center;
+  background-position: contain;
   background-repeat: no-repeat;
   background-size: cover;
   div.f-container {

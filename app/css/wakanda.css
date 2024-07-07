@@ -166,6 +166,11 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 10rem;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
 }
 
 *::selection {
@@ -194,14 +199,14 @@ body {
 /*Styles partie en-tête*/
 
 header {
+  background-image: url("../assets/Illustrations+Logo/All-pages/arrière_plan.png");
+  top: 0;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
-  background-image: url("../assets/Illustrations+Logo/All-pages/arrière_plan.png");
-  top: 0;
   z-index: 1000;
-  position: sticky;
 }
 
 header nav.h-nav ul {
@@ -227,186 +232,164 @@ header nav.h-nav ul li a:hover {
   text-decoration: underline;
 }
 
-header nav.h-nav ul li a#enigme {
+header nav.h-nav ul li a#wakanda {
   color: #f2cef2;
   text-decoration: underline;
 }
 
-/* Style menu  */
-
-/* Partie sec 1 */
-
-section.sec-1 {
+main {
+  width: 100%;
   box-sizing: border-box;
-  display: flex;
-  width: 100%;
-  padding: 0 0 1rem 0;
-}
-
-section.sec-1 img {
-  width: 40%;
-  height: 120vh;
-  transform: translate(10%, -20%);
-}
-
-section.sec-1 article.sec1-r {
   padding: 0;
-  padding-top: 5rem;
-  width: 60%;
+  margin: 0;
 }
 
-section.sec-1 article.sec1-r h2 {
-  width: 42%;
-  font-family: beyno;
-  font-size: 36px;
-  color: #f2cef2;
-  text-align: justify;
-  transform: translateX(-5%);
-  margin-bottom: 1rem;
-}
-
-section.sec-1 article.sec1-r div.quot {
-  transform: translateX(-10%);
-  height: 400px;
+section.w-1 {
+  padding: 0;
   width: 100%;
-  padding: 1rem;
-  margin-bottom: 0;
-  background-image: url("../assets/Illustrations+Logo/Enigme/Pantherenigme2.png");
+  height: 110vh;
+  background-image: url("../assets/Illustrations+Logo/Wakanda/Pantherwakanda1.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-size: 120%;
 }
 
-section.sec-1 article.sec1-r div.quot P.citation {
-  width: 75%;
-  text-align: justify;
-  color: #ffffff;
-  font-family: cantarell;
-  font-size: 14px;
-}
-
-section.sec-1 article.sec1-r img {
-  transform: translate(-10%, -50%);
-  height: 1px;
-  width: 80%;
-}
-
-/* Partie sec 2 */
-
-section.sec2 {
-  padding: 1.5rem 1rem 2rem 8rem;
-  width: 100%;
-}
-
-section.sec2 h2.text-enigme {
-  font-size: 43px;
-  font-family: wakanda;
-  color: #f2cef2;
-  width: 80%;
-  margin-bottom: 2rem;
-}
-
-section.sec2 article {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-section.sec2 article div.sec2-b {
-  font-family: cantarell;
-  font-size: 14px;
-  width: 50%;
-  color: #ffffff;
-}
-
-section.sec2 article div.sec2-b p {
-  width: 100%;
-  line-height: 130%;
-  margin-bottom: 5rem;
-}
-
-section.sec2 article div.sec2-b p span.text-enigme {
-  font-family: wakanda;
-}
-
-section.sec2 article div.sec2-b form {
+section.w-1 div.w1-left {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  transform: translate(35%, 120%);
 }
 
-section.sec2 article div.sec2-b form label {
-  width: 100%;
-  margin: 0.5rem 0;
-}
-
-section.sec2 article div.sec2-b form input[type="text"] {
-  margin: 0.5rem 0 2.5rem 0;
-  width: 100%;
-  height: 2rem;
-  border: 1px solid #f2cef2;
-  padding: 0.3rem 1rem;
-  background-color: inherit;
+section.w-1 div.w1-left h2 {
+  font-size: 43px;
+  font-family: beyno;
   color: #f2cef2;
-  border-radius: 2rem;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-section.sec2 article div.sec2-b form input[type="text"]::placeholder {
-  color: #f2cef2;
+section.w-1 div.w1-left h2.text-enigme {
+  font-family: wakanda;
+  font-size: 39px;
+  font-weight: normal;
+  width: 390px;
+  text-align: justify;
+  margin-bottom: 20px;
 }
 
-section.sec2 article div.sec2-b form button[type="submit"] {
-  color: #021740;
-  background-color: #f2cef2;
-  margin: auto;
-  width: 6.5rem;
-  height: 2.3rem;
-  border-radius: 2rem;
-  padding: 0.5rem 1rem;
-  border: none;
-}
-
-section.sec2 article div.sec2-b form button[type="submit"]:hover {
-  color: #f2cef2;
-  background-color: #021740;
-  border: 1px solid #f2cef2;
-  transition: 0.5s ease-out;
-}
-
-section.sec2 article div.sec2-r {
+section.w-1 div.w1-left p {
+  color: #ffffff;
   font-size: 12px;
   font-family: cantarell;
-  color: #ffffff;
-  width: 50%;
+  width: 390px;
+  text-align: justify;
 }
 
-section.sec2 article div.sec2-r div.quot {
-  background-image: url("../assets/Illustrations+Logo/Enigme/Pantherenigme2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 280px;
+section.w-2 {
+  padding: 30px 0;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 1rem;
+  align-items: top;
+  background-image: url("../assets/Illustrations+Logo/Wakanda/Pantherwakanda2.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: brightness(0.7);
 }
 
-section.sec2 article div.sec2-r div.quot p {
-  transform: translateY(-24%);
-  width: 90%;
+section.w-2 article.w2-l {
+  width: 46%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+  font-family: cantarell;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+section.w-2 article.w2-l div.w2-d {
+  margin: 20px 0;
+}
+
+section.w-2 article.w2-l h2 {
+  font-family: beyno;
+  font-size: 22px;
+  font-weight: normal;
+  color: #f2cef2;
+  margin: 20px 0;
+}
+
+section.w-2 article.w2-l p {
+  width: 100%;
+  margin: 30px 0;
+  text-align: justify;
+}
+
+section.w-2 article.w2-l p a#link {
+  color: #ffffff;
+  text-decoration: none;
+  margin: auto;
   text-align: center;
+}
+
+section.w-2 article.w2-l p a#link:hover {
+  text-decoration: underline;
+  color: #f2cef2;
+  opacity: 0.7;
+  transition: all 0.5s ease-out;
+}
+
+section.w-2 article.w2-l div.d-link {
+  padding-left: 70px;
+  padding-top: 30px;
+  background-color: #3d2da6;
+  height: 250px;
+}
+
+section.w-2 article.w2-r {
+  height: fit-content;
+  margin-left: 30px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+  font-family: cantarell;
+  font-size: 12px;
+}
+
+section.w-2 article.w2-r div.w2-d {
+  margin: 20px 0;
+}
+
+section.w-2 article.w2-r h2 {
+  font-family: beyno;
+  font-size: 22px;
+  font-weight: normal;
+  color: #f2cef2;
+  margin: 20px 0;
+}
+
+section.w-2 article.w2-r p {
+  width: 100%;
+  margin: 30px 0;
+  text-align: justify;
+}
+
+section.w-2 article.w2-r img {
+  width: 90%;
 }
 
 footer {
   width: 100%;
   background-image: url("../assets/Illustrations+Logo/All-pages/back_footer.png");
-  background-position: center;
+  background-position: contain;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -516,4 +499,4 @@ footer div.f-container article.f-right div.f-r-bottom p span {
   margin: 0 4px;
 }
 
-/*# sourceMappingURL=enigme.css.map */
+/*# sourceMappingURL=wakanda.css.map */
