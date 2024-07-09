@@ -216,12 +216,12 @@ header nav.h-nav ul li a {
   font-size: 16px;
 }
 header nav.h-nav ul li a:hover {
-  color: #f2cef2;
+  color: #9e91b7;
   transition: color 0.3s ease-out;
   text-decoration: underline;
 }
 header nav.h-nav ul li a#accueil {
-  color: #f2cef2;
+  color: #9e91b7;
   text-decoration: underline;
 }
 
@@ -236,7 +236,7 @@ div.traits {
 div.traits div.trait-1 {
   width: 2px;
   height: 75vh;
-  background-color: #f2cef2;
+  background-color: #9e91b7;
   margin: 0 14px 0 0;
 }
 div.traits div.trait {
@@ -246,7 +246,7 @@ div.traits div.trait {
   justify-content: center;
 }
 div.traits div.trait div.trait-2 {
-  background-color: #f2cef2;
+  background-color: #9e91b7;
   width: 2px;
   height: 55vh;
 }
@@ -272,14 +272,14 @@ section.acc-1 div.acc1-l {
 section.acc-1 div.acc1-l h1 {
   font-size: 68px;
   font-family: panthera;
-  color: #f2cef2;
+  color: #9e91b7;
   font-weight: 400;
   margin: 20px 0;
 }
 section.acc-1 div.acc1-l h2 {
   font-size: 32px;
   font-family: beyno;
-  color: #f2cef2;
+  color: #9e91b7;
   font-weight: 400;
   margin: 20px 0;
 }
@@ -337,7 +337,7 @@ section.acc-2 div h2 {
   font-size: 22px;
   margin: 0 0 10px 0;
   font-family: beyno;
-  color: #f2cef2;
+  color: #9e91b7;
   font-weight: 400;
 }
 section.acc-2 div p {
@@ -371,7 +371,7 @@ section.acc-3 article.acc3-l div.acc3l-d {
   margin: 20px 0;
 }
 section.acc-3 article.acc3-l div.acc3l-d h2 {
-  color: #f2cef2;
+  color: #9e91b7;
   font-size: 24px;
   font-weight: 400;
   font-family: beyno;
@@ -480,11 +480,11 @@ section.form form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(242, 206, 242, 0.2);
+  background-color: rgba(242, 206, 242, 0.3);
   font-size: 12px;
   font-family: cantarell;
   color: #021740;
-  border-radius: 38px;
+  border-radius: 20%;
 }
 section.form form h2 {
   margin: 15px 0;

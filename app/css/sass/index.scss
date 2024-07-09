@@ -84,13 +84,13 @@ header {
       color: $white;
       font-size: 16px;
       &:hover {
-        color: $pink;
+        color: $low-pink;
         transition: color 0.3s ease-out;
         text-decoration: underline;
       }
     }
     li a#accueil {
-      color: $pink;
+      color: $low-pink;
       text-decoration: underline;
     }
   }
@@ -106,7 +106,7 @@ div.traits {
   div.trait-1 {
     width: 2px;
     height: 75vh;
-    background-color: $pink;
+    background-color: $low-pink;
     margin: 0 14px 0 0;
   }
   div.trait {
@@ -115,7 +115,7 @@ div.traits {
     align-items: center;
     justify-content: center;
     div.trait-2 {
-      background-color: $pink;
+      background-color: $low-pink;
       width: 2px;
       height: 55vh;
     }
@@ -141,14 +141,14 @@ section.acc-1 {
     h1 {
       font-size: 68px;
       font-family: panthera;
-      color: $pink;
+      color: $low-pink;
       font-weight: 400;
       margin: 20px 0;
     }
     h2 {
       font-size: 32px;
       font-family: beyno;
-      color: $pink;
+      color: $low-pink;
       font-weight: 400;
       margin: 20px 0;
     }
@@ -206,7 +206,7 @@ section.acc-2 {
       font-size: 22px;
       margin: 0 0 10px 0;
       font-family: beyno;
-      color: $pink;
+      color: $low-pink;
       font-weight: 400;
     }
     p {
@@ -239,7 +239,7 @@ section.acc-3 {
       justify-content: space-between;
       margin: 20px 0;
       h2 {
-        color: $pink;
+        color: $low-pink;
         font-size: 24px;
         font-weight: 400;
         font-family: beyno;
@@ -350,11 +350,11 @@ section.form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba($pink, 0.2);
+    background-color: rgba($pink, 0.3);
     font-size: 12px;
     font-family: cantarell;
     color: $deep-blue;
-    border-radius: 38px;
+    border-radius: 20%;
     h2 {
       margin: 15px 0;
       width: 42%;

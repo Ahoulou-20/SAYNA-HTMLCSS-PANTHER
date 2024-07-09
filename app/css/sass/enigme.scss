@@ -33,7 +33,7 @@ html {
 }
 
 *::selection {
-  background-color: $pink;
+  background-color: $low-pink;
   color: $deep-blue;
 }
 
@@ -47,7 +47,7 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: $pink;
+  background-color: $low-pink;
   border-radius: 1rem;
 }
 
@@ -79,13 +79,13 @@ header {
       color: $white;
       font-size: 16px;
       &:hover {
-        color: $pink;
+        color: $low-pink;
         transition: color 0.3s ease-out;
         text-decoration: underline;
       }
     }
     li a#enigme {
-      color: $pink;
+      color: $low-pink;
       text-decoration: underline;
     }
   }
@@ -113,7 +113,7 @@ section.sec-1 {
       width: 42%;
       font-family: beyno;
       font-size: 36px;
-      color: $pink;
+      color: $low-pink;
       text-align: justify;
       transform: translateX(-5%);
       margin-bottom: 1rem;
@@ -155,7 +155,7 @@ section.sec2 {
   h2.text-enigme {
     font-size: 43px;
     font-family: wakanda;
-    color: $pink;
+    color: $low-pink;
     width: 80%;
     margin-bottom: 2rem;
   }

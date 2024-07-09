@@ -3,27 +3,22 @@
   font-family: panthera;
   src: url("../assets/fonts/panthera.otf") format("opentype");
 }
-
 @font-face {
   font-family: beyno;
   src: url("../assets/fonts/BEYNO.otf") format("opentype");
 }
-
 @font-face {
   font-family: wakanda;
   src: url("../assets/fonts/WakandaForever-Regular.ttf") format("truetype");
 }
-
 @font-face {
   font-family: cantarell;
   src: url("../assets/fonts/Cantarell-Regular.ttf") format("truetype");
 }
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -114,7 +109,6 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -169,7 +163,7 @@ html {
 }
 
 *::selection {
-  background-color: #f2cef2;
+  background-color: #9e91b7;
   color: #021740;
 }
 
@@ -183,7 +177,7 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #f2cef2;
+  background-color: #9e91b7;
   border-radius: 1rem;
 }
 
@@ -192,79 +186,67 @@ body {
 }
 
 /*Styles partie en-tête*/
-
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 4rem;
   background-image: url("../assets/Illustrations+Logo/All-pages/arrière_plan.png");
   top: 0;
   z-index: 1000;
   position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
 }
-
 header nav.h-nav ul {
   display: flex;
   justify-content: space-between;
 }
-
 header nav.h-nav ul li {
   padding: 0.4rem 0.4rem;
   margin: 0 0.4rem;
 }
-
 header nav.h-nav ul li a {
   text-decoration: none;
   font-family: beyno;
   color: #ffffff;
   font-size: 16px;
 }
-
 header nav.h-nav ul li a:hover {
-  color: #f2cef2;
+  color: #9e91b7;
   transition: color 0.3s ease-out;
   text-decoration: underline;
 }
-
 header nav.h-nav ul li a#enigme {
-  color: #f2cef2;
+  color: #9e91b7;
   text-decoration: underline;
 }
 
 /* Style menu  */
-
 /* Partie sec 1 */
-
 section.sec-1 {
   box-sizing: border-box;
   display: flex;
   width: 100%;
   padding: 0 0 1rem 0;
 }
-
 section.sec-1 img {
   width: 40%;
   height: 120vh;
   transform: translate(10%, -20%);
 }
-
 section.sec-1 article.sec1-r {
   padding: 0;
   padding-top: 5rem;
   width: 60%;
 }
-
 section.sec-1 article.sec1-r h2 {
   width: 42%;
   font-family: beyno;
   font-size: 36px;
-  color: #f2cef2;
+  color: #9e91b7;
   text-align: justify;
   transform: translateX(-5%);
   margin-bottom: 1rem;
 }
-
 section.sec-1 article.sec1-r div.quot {
   transform: translateX(-10%);
   height: 400px;
@@ -279,7 +261,6 @@ section.sec-1 article.sec1-r div.quot {
   align-items: center;
   justify-content: center;
 }
-
 section.sec-1 article.sec1-r div.quot P.citation {
   width: 75%;
   text-align: justify;
@@ -287,7 +268,6 @@ section.sec-1 article.sec1-r div.quot P.citation {
   font-family: cantarell;
   font-size: 14px;
 }
-
 section.sec-1 article.sec1-r img {
   transform: translate(-10%, -50%);
   height: 1px;
@@ -295,56 +275,47 @@ section.sec-1 article.sec1-r img {
 }
 
 /* Partie sec 2 */
-
 section.sec2 {
   padding: 1.5rem 1rem 2rem 8rem;
   width: 100%;
 }
-
 section.sec2 h2.text-enigme {
   font-size: 43px;
   font-family: wakanda;
-  color: #f2cef2;
+  color: #9e91b7;
   width: 80%;
   margin-bottom: 2rem;
 }
-
 section.sec2 article {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 section.sec2 article div.sec2-b {
   font-family: cantarell;
   font-size: 14px;
   width: 50%;
   color: #ffffff;
 }
-
 section.sec2 article div.sec2-b p {
   width: 100%;
   line-height: 130%;
   margin-bottom: 5rem;
 }
-
 section.sec2 article div.sec2-b p span.text-enigme {
   font-family: wakanda;
 }
-
 section.sec2 article div.sec2-b form {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
-
 section.sec2 article div.sec2-b form label {
   width: 100%;
   margin: 0.5rem 0;
 }
-
-section.sec2 article div.sec2-b form input[type="text"] {
+section.sec2 article div.sec2-b form input[type=text] {
   margin: 0.5rem 0 2.5rem 0;
   width: 100%;
   height: 2rem;
@@ -354,12 +325,10 @@ section.sec2 article div.sec2-b form input[type="text"] {
   color: #f2cef2;
   border-radius: 2rem;
 }
-
-section.sec2 article div.sec2-b form input[type="text"]::placeholder {
+section.sec2 article div.sec2-b form input[type=text]::placeholder {
   color: #f2cef2;
 }
-
-section.sec2 article div.sec2-b form button[type="submit"] {
+section.sec2 article div.sec2-b form button[type=submit] {
   color: #021740;
   background-color: #f2cef2;
   margin: auto;
@@ -369,21 +338,18 @@ section.sec2 article div.sec2-b form button[type="submit"] {
   padding: 0.5rem 1rem;
   border: none;
 }
-
-section.sec2 article div.sec2-b form button[type="submit"]:hover {
+section.sec2 article div.sec2-b form button[type=submit]:hover {
   color: #f2cef2;
   background-color: #021740;
   border: 1px solid #f2cef2;
   transition: 0.5s ease-out;
 }
-
 section.sec2 article div.sec2-r {
   font-size: 12px;
   font-family: cantarell;
   color: #ffffff;
   width: 50%;
 }
-
 section.sec2 article div.sec2-r div.quot {
   background-image: url("../assets/Illustrations+Logo/Enigme/Pantherenigme2.png");
   background-position: center;
@@ -396,7 +362,6 @@ section.sec2 article div.sec2-r div.quot {
   justify-content: center;
   padding: 1rem;
 }
-
 section.sec2 article div.sec2-r div.quot p {
   transform: translateY(-24%);
   width: 90%;
@@ -410,7 +375,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 footer div.f-container {
   color: #ffffff;
   font-family: cantarell;
@@ -422,17 +386,14 @@ footer div.f-container {
   justify-content: center;
   align-items: center;
 }
-
 footer div.f-container h3 {
   font-size: 22px;
   letter-spacing: 28%;
   margin-bottom: 2rem;
 }
-
 footer div.f-container article.f-left {
   width: 30%;
 }
-
 footer div.f-container article.f-left div.f-logo {
   width: 80%;
   background-image: url("../assets/Illustrations+Logo/All-pages/footer1.png");
@@ -444,69 +405,47 @@ footer div.f-container article.f-left div.f-logo {
   align-items: center;
   height: 42vh;
 }
-
 footer div.f-container article.f-right {
   width: 65%;
 }
-
 footer div.f-container article.f-right div.f-right-top {
   margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
 }
-
 footer div.f-container article.f-right div.f-right-top div.pages {
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 footer div.f-container article.f-right div.f-right-top div.pages div.link {
   margin: 10px 0;
 }
-
 footer div.f-container article.f-right div.f-right-top div.pages div.link a {
   color: #ffffff;
   text-decoration: none;
   text-transform: capitalize;
 }
-
-footer
-  div.f-container
-  article.f-right
-  div.f-right-top
-  div.pages
-  div.link
-  a
-  span {
+footer div.f-container article.f-right div.f-right-top div.pages div.link a span {
   margin-right: 2px;
 }
-
 footer div.f-container article.f-right div.f-right-top div.retrouvez-nous {
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-footer
-  div.f-container
-  article.f-right
-  div.f-right-top
-  div.retrouvez-nous
-  div.img {
+footer div.f-container article.f-right div.f-right-top div.retrouvez-nous div.img {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 60%;
 }
-
 footer div.f-container article.f-right div.f-r-bottom {
   display: flex;
   align-items: center;
 }
-
 footer div.f-container article.f-right div.f-r-bottom p span {
   background-color: #f2cef2;
   color: #f2cef2;

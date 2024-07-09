@@ -38,7 +38,7 @@ html {
 }
 
 *::selection {
-  background-color: $pink;
+  background-color: $low-pink;
   color: $deep-blue;
 }
 
@@ -52,7 +52,7 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: $pink;
+  background-color: $low-pink;
   border-radius: 1rem;
 }
 
@@ -84,13 +84,13 @@ header {
       color: $white;
       font-size: 16px;
       &:hover {
-        color: $pink;
+        color: $low-pink;
         transition: color 0.3s ease-out;
         text-decoration: underline;
       }
     }
     li a#wakanda {
-      color: $pink;
+      color: $low-pink;
       text-decoration: underline;
     }
   }
@@ -121,7 +121,7 @@ section.w-1 {
     h2 {
       font-size: 43px;
       font-family: beyno;
-      color: $pink;
+      color: $low-pink;
       font-weight: 400;
       margin-bottom: 10px;
     }
@@ -172,7 +172,7 @@ section.w-2 {
       font-family: beyno;
       font-size: 22px;
       font-weight: normal;
-      color: $pink;
+      color: $low-pink;
       margin: 20px 0;
     }
     p {
@@ -186,7 +186,7 @@ section.w-2 {
         text-align: center;
         &:hover {
           text-decoration: underline;
-          color: $pink;
+          color: $low-pink;
           opacity: 0.7;
           transition: all 0.5s ease-out;
         }
@@ -216,7 +216,7 @@ section.w-2 {
       font-family: beyno;
       font-size: 22px;
       font-weight: normal;
-      color: $pink;
+      color: $low-pink;
       margin: 20px 0;
     }
     p {
