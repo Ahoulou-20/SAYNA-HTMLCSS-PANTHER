@@ -627,4 +627,221 @@ footer div.f-container article.f-right div.f-r-bottom p span {
   margin: 0 4px;
 }
 
+/* #------------Responsive design--------- */
+@media screen and (max-width: 640px) {
+  header {
+    padding: 0.5rem 1rem;
+  }
+  div.traits {
+    display: none;
+  }
+  /*-----------------*/
+  section.acc-1 {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 20px;
+    flex-direction: column-reverse;
+  }
+  section.acc-1 div.acc1-l {
+    width: 99%;
+    padding: 40px 0 0 0;
+  }
+  section.acc-1 div.acc1-l h1 {
+    font-size: 25px;
+  }
+  section.acc-1 div.acc1-l h2 {
+    font-size: 20px;
+  }
+  section.acc-1 div.acc1-l p {
+    width: 80%;
+  }
+  section.acc-1 div.acc1-r {
+    width: 100%;
+  }
+  /*-----------------------*/
+  section.acc-2 {
+    width: 99%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 10px 30px;
+  }
+  section.acc-2 img.img1 {
+    width: 90%;
+    margin: 10px 0;
+  }
+  section.acc-2 img.img2 {
+    width: 90%;
+    margin: 10px 0;
+  }
+  section.acc-2 img.img3 {
+    width: 90%;
+    margin: 10px 0;
+  }
+  section.acc-2 div {
+    width: 95%;
+    flex-direction: column;
+    margin: 20px 10px;
+  }
+  /*--------------------------*/
+  section.acc-3 {
+    padding: 40px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0 10px 30px;
+  }
+  section.acc-3 article.acc3-l {
+    height: fit-content;
+    width: 99%;
+  }
+  section.acc-3 article.acc3-l div.acc3l-d h2 {
+    font-size: 18px;
+  }
+  section.acc-3 article.acc3-r {
+    width: 99%;
+    height: fit-content;
+  }
+  section.acc-3 article.acc3-r div.img-info {
+    height: fit-content;
+    width: 90%;
+    font-size: 12px;
+  }
+  section.acc-3 article.acc3-r div.img-info figure {
+    transform: translateY(20%);
+    position: relative;
+    width: 90%;
+    height: 600px;
+    padding: 30px;
+  }
+  section.acc-3 article.acc3-r div.img-info figure img {
+    width: 90%;
+    position: relative;
+    margin: 0 0 65px 0;
+  }
+  section.acc-3 article.acc3-r div.img-info figure figcaption {
+    position: relative;
+    transform: translateY(-60%);
+  }
+  section.acc-3 article.acc3-r div.img-info figure figcaption h2 {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  section.acc-3 article.acc3-r div.img-info figure figcaption div.options {
+    flex-direction: column;
+  }
+  section.acc-3 article.acc3-r div.img-info figure figcaption div.options div {
+    text-align: center;
+    width: 100%;
+    padding: 6px 5px;
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  section.acc-3 article.acc3-r div.img-info figure figcaption div.aut-inf {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 15px 0;
+  }
+  section.acc-3 article.acc3-r div.img-info figure figcaption div.aut-inf p {
+    margin: 5px 0;
+  }
+  section.acc-3 article.acc3-r div.img-info figure figcaption div.aut-inf p strong {
+    font-weight: bold;
+  }
+  section.acc-3 article.acc3-r div.img-info div.img-info2 {
+    transform: translateY(25%);
+    width: 90%;
+    margin: auto;
+  }
+  section.acc-3 article.acc3-r div.img-info div.img-info2 img {
+    margin: 50px 0 0px 0;
+    width: 100%;
+  }
+  /*-----------------------------*/
+  section.form {
+    width: 100%;
+    height: fit-content;
+    margin: 80px 0;
+    margin: 0 0 0 15px;
+  }
+  section.form form {
+    padding: 30px 20px;
+    width: 99%;
+    height: fit-content;
+  }
+  section.form form h2 {
+    font-size: 23px;
+    width: 50%;
+  }
+  section.form form input {
+    width: 99%;
+  }
+  section.form form textarea {
+    width: 99%;
+  }
+  /*--------------------------------*/
+  footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  footer div.f-container {
+    width: 100vw;
+    flex-direction: column;
+    margin: 0;
+  }
+  footer div.f-container h3 {
+    font-size: 22px;
+    letter-spacing: 28%;
+    margin-bottom: 2rem;
+  }
+  footer div.f-container article.f-left {
+    width: 100%;
+  }
+  footer div.f-container article.f-left div.f-logo {
+    width: 100%;
+    height: 42vh;
+  }
+  footer div.f-container article.f-right {
+    width: 100%;
+  }
+  footer div.f-container article.f-right div.f-right-top {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer div.f-container article.f-right div.f-right-top div.pages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  footer div.f-container article.f-right div.f-right-top div.pages div.link {
+    margin: 10px 0;
+  }
+  footer div.f-container article.f-right div.f-right-top div.pages div.link a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  footer div.f-container article.f-right div.f-right-top div.pages div.link a span {
+    margin-right: 2px;
+  }
+  footer div.f-container article.f-right div.f-right-top div.retrouvez-nous {
+    width: 100%;
+    padding: 0 20px;
+  }
+  footer div.f-container article.f-right div.f-right-top div.retrouvez-nous div.img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
