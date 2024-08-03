@@ -65,12 +65,14 @@ body {
 header {
   background-image: url("../assets/Illustrations+Logo/All-pages/arrière_plan.png");
   top: 0;
+  right: 0;
   z-index: 1000;
   position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 8rem;
+  width: 100%;
   nav.h-nav ul {
     display: flex;
     justify-content: space-between;
@@ -505,7 +507,10 @@ footer {
 
 @media screen and (max-width: 640px) {
   header {
-    padding: 0.5rem 1rem;
+    margin: 0;
+    width: 105%;
+    box-sizing: border-box;
+    padding: 1rem 0.2rem;
     nav.h-nav ul {
       li {
       }
@@ -526,6 +531,7 @@ footer {
     margin: 0;
     padding: 0 0 0 20px;
     flex-direction: column-reverse;
+    justify-content: space-evenly;
     div.acc1-l {
       width: 99%;
       padding: 40px 0 0 0;
@@ -549,8 +555,8 @@ footer {
     height: fit-content;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 10px 0 10px 30px;
+    justify-content: space-evenly;
+    margin: 10px 0 10px 15px;
     img.img1 {
       width: 90%;
       margin: 10px 0;
@@ -571,13 +577,15 @@ footer {
   }
   /*--------------------------*/
   section.acc-3 {
-    padding: 40px 0 0 0;
+    padding: 0 0 0 0;
+    margin: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 10px 0 10px 30px;
+    justify-content: space-evenly;
+    margin: 10px 0 10px 15px;
     article.acc3-l {
+      margin: auto;
       height: fit-content;
       width: 99%;
       div.acc3l-d {
@@ -587,6 +595,7 @@ footer {
       }
     }
     article.acc3-r {
+      margin: auto;
       width: 99%;
       height: fit-content;
       div.img-info {
@@ -652,13 +661,14 @@ footer {
     width: 100%;
     height: fit-content;
     margin: 80px 0;
-    margin: 0 0 0 15px;
+    justify-content: space-evenly;
+    margin: 10px 0 10px 15px;
     form {
       padding: 30px 20px;
       width: 99%;
       height: fit-content;
       h2 {
-        font-size: 23px;
+        font-size: 20px;
         width: 50%;
       }
       input {
